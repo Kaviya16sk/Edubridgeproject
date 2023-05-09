@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+ xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration and Login App</title>
+
+<link rel="stylesheet"
+ href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+ integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+ crossorigin="anonymous">
+
+</head>
+<body background="https://media.istockphoto.com/id/1255030821/photo/online-shopping-mobile-app-holding-by-a-hand-with-blurred-background-of-supermarket-grocery.jpg?s=612x612&w=0&k=20&c=BLzIIst80ioPIz79zxPKG8UqZ0BZJUokLWinK3kiDdA=" 
+style="background-repeat:no-repeat;background-attachment:fixed;background-size:cover">
+ <!-- create navigation bar ( header) -->
+ <nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+   <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed"
+     data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+     aria-controls="navbar">
+     <span class="sr-only">Toggle navigation</span> <span
+      class="icon-bar"></span> <span class="icon-bar"></span> <span
+      class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="#" th:href="@{/}">Grocery Store</a>
+   </div>
+   <div id="navbar" class="collapse navbar-collapse">
+    <ul class="nav navbar-nav">
+     <li sec:authorize="isAuthenticated()"><a th:href="@{/logout}">Logout</a></li>
+    </ul>
+   </div>
+  </div>
+ </nav>
+
+ <br>
+ <br>
+
+ <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
+        <div class="container-fluid">
+         
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+         
+      </nav>
+
+
+      <!----Home-->
+
+      <section id="home">
+          <h1 class="text-center">GROCERY STORE</h1>
+          
+          
+      </section>
+
+
+      <!-----About---->
+
+      <section id="about">
+          <div class="container-fluid">
+              <div class="row">
+                  <div class="col-lg-6 col-md-6 col-12 my-2">
+                        <img src="about.png" class="img-fluid">
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-12 p-lg-5 p-2 my-5">
+                      <h1>ABOUT US</h1>
+                      <p>Our goal is to give our clients the best shopping background as far as service, range, and value, which assembles a solid business and conveys long haul an incentive for our investors.
+
+We have built up a novel start to finish working answer for online grocery retail dependent on restrictive innovation and IP, appropriate for working our very own business and those of our business accomplices.
+
+The world is evolving quickly, determined by various shopping propensities and always cutting-edge innovation for the customer. Grocery is the biggest of all retail portions and is moving on the web.
+
+In addition, the quick development of shopping utilizing cell phones opens new chances. We are all around situated to exploit these long-haul basic patterns to assist our clients, accomplices, and investors.
+We Inspire People to Make Everyday Eating Extraordinary > For over 35 years we’ve made it our objective to separate ourselves from the rest.
+
+Our organizers needed to make a space that concentrated on the benefit of supporting neighborhood producers and philanthropies while offering the freshest and most scrumptious nourishments conceivable.
+
+‘Organization Name’ is glad to furnish our visitors with a warm and welcoming shopping background in each network we serve.
+
+Today, with more than 160 areas in 22 states, we are as yet dedicated to those qualities, while giving the mood of a neighborly nearby market and a one-of-a-kind shopping knowledge.
+
+Following the convention of our unique Greensboro area, visitors are constantly invited with a warm welcome and noteworthy administration. Despite everything we’re bringing our visitors scrumptious, crisp charge, and easily heavenly dinners consistently.</p>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      
+              
+
+      <section id="contact">
+            <div class="container box my-5">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <img src="contact.jpg" class="img-fluid">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <h1>CONTACT US</h1>
+                        <form class="mb-3">
+                            <input type="text" class="form-control" placeholder="Enter your name">
+                            <input type="email" class="form-control" placeholder="Enter your mail">
+                            <textarea class="form-control" placeholder="Enter your message"></textarea>
+                            <button class="btn signin">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+      </section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
